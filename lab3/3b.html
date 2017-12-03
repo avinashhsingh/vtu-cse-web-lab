@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Stacking</title>
+<style type="text/css">
+	.para {
+		width: 310px;
+		height: 150px;
+		position: absolute;
+	}
+	.para.p1 {
+		left: 20px;
+		top: 20px;
+		background-color: aqua;
+		z-index: 1;
+	}
+	.para.p2 {
+		left: 60px;
+		top: 60px;
+		background-color: burlywood;
+		z-index: 2;
+	}
+	.para.p3 {
+		top: 100px;
+		left: 100px;
+		background-color: coral;
+		z-index: 3;
+	}
+	</style>
+	
+	<script type="text/javascript">
+	var topLayer="l3";
+		var origpos;
+		function mover(toTop,pos) {
+			document.getElementById(toTop).style.zIndex="4";
+			topLayer=toTop;
+			origpos=pos;
+		}
+		function moveBack() {
+			document.getElementById(topLayer).style.zIndex=origpos;
+		}
+	</script>
+</head>
+
+<body>
+<div class="para p1" id="l1" onMouseOver="mover('l1','1');" onMouseOut="moveBack();">
+	
+</div>
+
+<div class="para p2" id="l2" onMouseOver="mover('l2','2');" onMouseOut="moveBack();">
+	
+</div>
+<div class="para p3" id="l3" onMouseOver="mover('l3','3');" onMouseOut="moveBack();">
+	
+</div>
+</body>
+</html>
+

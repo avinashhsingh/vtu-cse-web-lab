@@ -1,0 +1,73 @@
+<html>
+<head><title>USNSEM</title>
+<script type="text/javascript">
+function formValidator()
+{
+	var usn=document.getElementById('req1');
+	var sem=document.getElementById('req2');
+	alert(usn.value);
+	alert(sem.value);
+
+	if(isCorrect(usn)) 
+	{
+		if(isPerfect(sem)) 
+		{
+			return true;
+		}
+	}
+			return false;
+
+}
+
+function isCorrect(elem1)
+{
+	alphaExp1=/^[1-4][a-z]{2}[1-9]{2}[a-z]{2}[0-9]{3}$/;
+
+	if(elem1.value.length==0)
+	{
+		alert("usn number is empty");
+		return false;
+	}
+	else if(!elem1.value.match(alphaExp1))
+	{
+		alert("usn number is not valid");
+		return false;
+	}
+	else {
+	alert("usn is correct");
+	return true;
+	}
+}
+
+function isPerfect(elem2)
+{
+	alphaExp2=/^[1-8]$/;
+
+	if(elem2.value.length==0)
+	{
+		alert("sem is empty");
+		return false;
+	}
+	else if(!elem2.value.match(alphaExp2))
+	{
+		alert("sem is not valid");
+		return false;
+	}
+	else {
+	alert("sem is correct");
+	return true;
+	}
+}
+
+</script>
+</head>
+<body>
+<form onsubmit="return formValidator()">
+<h3> enter the std usn and sem in correct format</h3>
+USN:<input type="text" id="req1"><br/>
+SEM:<input type="text" id="req2"><br/>
+    <input type="submit" value="chechfield">
+    <input type="reset" value="clear">
+</form>
+</body>
+</html>

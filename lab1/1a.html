@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html "-//W3C//DTD XHTML1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml11">
+<head><title>Fibonacci Number</title></head>
+
+<body>
+<script type="text/javascript">
+var fib1=0,fib2=1,fib3=0;
+document.write("<h1>Fibonacci Number</h1>");
+
+var num=prompt("Enter the Number");
+
+if(num!=null && num>0)
+{
+ 	document.write("<h3>"+num+"Fibonacci Numbers are:</h3><br/>");
+	if(num==1)
+		document.write("<h3>"+fib1+"</h3><br/>");
+	else
+		document.write("<h3>"+fib1+"<br/>"+fib2+"</h3><br/>");
+		for(i=3;i<=num;i++)
+		{
+			fib3=fib1+fib2;
+			document.write("<h3>"+fib3+"</h3><br/>");
+			fib1=fib2;
+			fib2=fib3;
+		}
+}
+else
+	alert("Enter the valid input");
+</script>
+</body>
+</html>

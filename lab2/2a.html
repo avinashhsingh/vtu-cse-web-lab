@@ -1,0 +1,46 @@
+<html>
+<head><title>USN</title>
+
+<script type="text/javascript">
+function formValidator()
+{
+	var usn=document.getElementById('req1');
+	alert(usn.value);
+
+	if(isCorrect(usn))
+	{
+		return true;
+	}
+		return false;
+}
+
+function isCorrect(elem1)
+{
+	alphaExp1=/^[1-4][a-z]{2}[1-9]{2}[a-z]{2}[0-9]{3}$/;
+
+	if(elem1.value.length==0)
+	{
+		alert("usn number is empty");
+		return false;
+	}
+	else if(!elem1.value.match(alphaExp1))
+	{
+		alert("usn number is not valid");
+		return false;
+	}
+	else {
+	alert("usn is correct");
+	return true;
+	}
+}
+</script>
+</head>
+<body>
+<form onsubmit="return formValidator()">
+<h3> enter the usn in correct formatk</h3>
+USN:<input type="text" id="req1"><br/>
+    <input type="submit" value="chechfield">
+    <input type="reset" value="clear">
+</form>
+</body>
+</html>
