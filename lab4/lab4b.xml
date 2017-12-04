@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="lab4b.xsl"?>
+
+<student>
+	<stud1>
+		<usn>4ai13cs020</usn>
+		<name>cheerag</name>
+		<noc>torento</noc>
+		<branch>cse</branch>
+		<yoj>2011</yoj>
+		<eid>memi</eid>
+	</stud1>
+</student>
+

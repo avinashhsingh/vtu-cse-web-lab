@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="lab4a.css"?>
+
+<student>
+	<stud_info>student info</stud_info>
+	<stud1>
+		<usn>USN:4AI11CS123</usn>
+		<name>NAME:Avinash</name>
+		<noc>COLLEGE:AIT</noc>
+		<branch>BRANCH:CSE</branch>
+		<yoj>Year of joining:2014</yoj>
+		<eid>E-Mail:avinash@gmail.com</eid>
+	</stud1>
+
+	<stud2>
+		<usn>USN:4AI11CS123</usn>
+		<name>NAME:Avinash</name>
+		<noc>COLLEGE:AIT</noc>
+		<branch>BRANCH:CSE</branch>
+		<yoj>Year of joining:2014</yoj>
+		<eid>E-Mail:avinash@gmail.com</eid>
+
+	</stud2>
+
+	<stud3>
+		<usn>USN:4AI11CS123</usn>
+		<name>NAME:Avinash</name>
+		<noc>COLLEGE:AIT</noc>
+		<branch>BRANCH:CSE</branch>
+		<yoj>Year of joining:2014</yoj>
+		<eid>E-Mail:avinash@gmail.com</eid>
+	</stud3>
+
+</student>
+

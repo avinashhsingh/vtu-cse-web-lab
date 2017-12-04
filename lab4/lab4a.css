@@ -1,0 +1,44 @@
+stud_info
+{
+	display:block;
+	color:blue;
+	font-size:italic;
+	margin-top:15px;
+	margin-bottom:30pt;
+}
+stud1,stud2,stud3
+{
+	display:block;
+	color:black;
+	font-size:12pt;
+}
+usn
+{
+	display:block;
+	color:red;
+	font-size:15pt;
+	margin-left:0;
+}
+name
+{
+	display:block;
+	color:violet;
+	margin-left:20pt;
+	text-decoration:underline;
+	font-weight:bold;
+}
+college,branch,year
+{
+	display:block;
+	color:green;
+	font-size:12pt;
+	margin-left:20pt;
+}
+emailid
+{
+	display:block;
+	color:green;
+	font-size:12pt;
+	margin-left:20pt;
+	font-family:vardana;
+}
